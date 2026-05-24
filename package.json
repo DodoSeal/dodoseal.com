@@ -1,0 +1,18 @@
+{
+  "name": "lighting-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./src/assets/styling/index.css -o ./out/assets/styling/index.css --watch",
+    "typescript": "tsc -w"
+  },
+  "keywords": [],
+  "author": "Max McDaniel",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}

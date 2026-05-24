@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="Lighting Design, Lighting, Max McDaniel, DodoSeal, Tech">
+    <meta name="description" content="Lighting and Programming Portfolio">
+    <meta name="author" content="Max McDaniel">
+    <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/png">
+    <title>Max McDaniel</title>
+
+    <!-- Code :) -->
+    <script type="module" src="./out/code/index.js"></script>
+
+    <!-- Tailwind Styling :) -->
+    <link rel="stylesheet" href="./out/assets/styling/index.css">
+</head>
+<body class="p-0 m-0 absolute bg-[url(/src/assets/backdrop.jpeg)] bg-position-[0%_25%] bg-no-repeat overflow-x-hidden">
+    <!-- Scroll to Top Button :) -->
+    <input class="fixed hidden text-white p-3 rounded-full bottom-8 right-4 bg-gray-900 z-50 cursor-pointer" type="button" value="Back to Top" id="scroll-to-top">
+
+    <!-- Main Content :) -->
+    <div class="w-screen h-screen flex items-center place-content-center" id="main-section">
+        <div class="w-220 h-150 rounded-3xl glass p-12">
+            <div class="w-full h-full">
+                <!-- About Me Content :) -->
+                <div class="w-full h-[45%] flex flex-col items-center">
+                    <img class="w-34 h-34 rounded-full drop-shadow-2xl" src="./src/assets/profile-pic.jpeg" alt="profile-picture">
+                    <p class="text-center text-2xl font-bold p-3 glow-sm text-white">Max McDaniel</p>
+                    <p class="text-center font-light text-white">Self-taught Developer and Lighting Designer</p>
+                </div>
+
+                <!-- Socials :) -->
+                <div class="w-full h-[20%] md:h-[10%] flex items-center place-content-center">
+                    <div class="w-24 h-12 p-2 flex items-center place-content-center">
+                        <input class="glass text-white w-full h-full cursor-pointer transition-all duration-200 hover:w-[110%] hover:h-[110%]" type="button" value="GitHub" onclick="window.open(`https://github.com/dodoseal`, `_about`)">
+                    </div>
+                    <div class="w-24 h-12 p-2 flex items-center place-content-center">
+                        <input class="glass text-white w-full h-full cursor-pointer transition-all duration-200 hover:w-[110%] hover:h-[110%]" type="button" value="Discord" onclick="window.open(`https://discord.com/users/777043422031773698`, `_about`)">
+                    </div>
+                    <div class="w-24 h-12 p-2 flex items-center place-content-center">
+                        <input class="glass text-white w-full h-full cursor-pointer transition-all duration-200 hover:w-[110%] hover:h-[110%]" type="button" value="Email" onclick="window.open(`mailto:admin@dodoseal.com`, `_about`)">
+                    </div>
+                </div>
+
+                <!-- Portfolio Navigation :) -->
+                 <div class="w-full h-[35%] md:h-[45%] flex items-center place-content-center">
+                    <!-- Lighting Portfolio -->
+                    <div id="lighting-btn" class="card-button group transition-all duration-200 relative w-[45%] md:w-[25%]">
+                        <img class="w-full h-full rounded-2xl" src="./src/assets/lighting-design/genie-lift.jpeg" alt="lighting-design-photo">
+                        <div class="flex items-center place-content-center image-button md:opacity-0 md:group-hover:opacity-90 transition-opacity duration-200">
+                            <p class="text-[0.65rem] md:text-xl text-white">Lighting Design</p>
+                        </div>
+                    </div>
+                    <!-- Projections Portfolio :) -->
+                    <div id="projections-btn" class="card-button group transition-all duration-200 relative w-[45%] md:w-[25%]">
+                        <img class="w-full h-full rounded-2xl" src="./src/assets/qlab.png" alt="projection-design-photo">
+                        <div class="flex items-center place-content-center image-button md:opacity-0 md:group-hover:opacity-90 transition-opacity duration-200">
+                            <p class="text-[0.65rem] md:text-xl text-white">Projection Design</p>
+                        </div>
+                    </div>
+                    <!-- Programming Portfolio :) -->
+                    <div id="programming-btn" class="card-button group transition-all duration-200 relative w-[45%] md:w-[25%]">
+                        <img class="w-full h-full rounded-2xl" src="./src/assets/lighting-design/blue-murder-orient-express.jpeg" alt="programming-photo">
+                        <div class="flex items-center place-content-center image-button md:opacity-0 md:group-hover:opacity-90 transition-opacity duration-200">
+                            <p class="text-[0.65rem] md:text-xl text-white">Programming</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lighting Content :) -->
+    <div id="lighting" class="w-screen h-screen flex items-center place-content-center bg-red-400">
+        <p class="text-3xl text-gray-900 font-bold">Lighting Section</p>
+    </div>
+
+    <!-- Projections Content :) -->
+    <div id="projections" class="w-screen h-screen flex items-center place-content-center bg-green-400">
+        <p class="text-3xl text-gray-900 font-bold">Projections Section</p>
+    </div>
+
+    <!-- Programming Content :) -->
+    <div id="programming" class="w-screen h-screen flex items-center place-content-center bg-blue-400">
+        <p class="text-3xl text-gray-900 font-bold">Programming Section</p>
+    </div>
+</body>
+</html>
